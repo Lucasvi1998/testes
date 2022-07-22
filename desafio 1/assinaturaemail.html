@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="assinaturaemail.css">
+</head>
+<body>
+	<div class="login-container">
+    <form action="assinaturaemail.html" method="GET">
+        <h1>Assinatura de E-mail</h1>
+    	<div>
+    	<label>Primeiro nome:</label>
+    	<input name=Nome>
+        </div>
+        <div>
+        <label>Sobrenome:</label>
+        <input name="Sobrenome">
+        </div>
+         <div>
+        <label>Cargo:</label>
+        <input name="Cargo">
+        </div>
+        <div>
+        <label>Endereço de email:</label>
+        <input name="E-mail">
+        </div>
+        <div>
+        <label>Número de Telefone:</label>
+        <input name="Telefone">
+        </div>
+
+        <button><h2>Enviar</h2></button>
+    </form>
+ 
+    
+      <div class=script-container>  
+    <div> <img src="icone.png"> </div>
+    <div id="assinaturaemail.html">   
+	<script>
+    	const assinaturaemailList = document.getElementById('assinaturaemail.html')
+    	new URLSearchParams(window.location.search).forEach((value, name)=>{
+
+    		assinaturaemailList.append(
+    			`${name}: ${value}`)
+    		assinaturaemailList.append(document.createElement('br'))
+    	})
+    </script>
+    <div> <img src="face.png"><img src="linkdim.png"><img src="ins.jpg"></div>
+
+
+</div>
+</div>
+</div>
+</body>
+</html>
